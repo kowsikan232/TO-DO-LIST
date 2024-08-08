@@ -66,4 +66,4 @@ elif option == "Delete Name":
 st.subheader("Current Names")
 names = getnames()
 for name in names:
-    st.write(f"{name['_id']}: {name['name']}")
+    st.write(f"{name['name']}")
