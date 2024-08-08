@@ -54,7 +54,7 @@ def deletename():
         st.success(f"Deleted name")
 
 st.title("TodoList")
-option = st.radio("Choose an option", ["Add Name", "Modify Name", "Delete Name"])
+option = st.sidebar.selectbox("Choose an option", ["Add Name", "Modify Name", "Delete Name"],index=None)
 
 if option == "Add Name":
     addname()
